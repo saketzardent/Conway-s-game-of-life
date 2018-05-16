@@ -1,0 +1,5 @@
+<div  *ngFor =  "let cells of currentGeneration; index as i">
+<my-cell (click) = "colorChanger(i,j)" *ngFor = "let isAlive of cells; index as j"  [isAlive] = "isAlive"></my-cell> 
+</div>
+<button (click) = "start()">Next Generation</button>
+<button (click) = "startJhalar()">Toggle Jhalar</button>
